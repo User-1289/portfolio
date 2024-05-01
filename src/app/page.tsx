@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import coderImg from './assets/Designer.png';
+import coderImg from './assets/Armaan.jpg';
 import NavMenu from './components/NavMenu';
 import TechStack from './components/TechStack';
 import Projects from './components/Projects';
