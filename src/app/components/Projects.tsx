@@ -4,6 +4,12 @@ const Projects: React.FC = ({}) => {
 
     let projectsInfo = [
         {
+            name:"PDF data extractor",
+            details:"It is a tool to extract various insights from PDF such as extracting questions or conceps from textbooks. It is mainly aimed for educating instructors and students. It is currently in development",
+            techStacks:"Django, Python, NextJS, NextAuth, Firebase, Firebase storage",
+            url:""
+        },
+        {
             name:"Vehicle Fee Manager",
             details:"Vehicle Fee Manager is an app that could be used to transform manual fee collection in schools. It acts as a system for the vehicle fee management in schools. It has a lot of features",
             techStacks:"React Native, Typescript, Lambda functions, MongoDB, Firebase",

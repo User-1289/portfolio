@@ -18,6 +18,7 @@ export default function Home() {
           <div className='text-gray-300 leading-relaxed'>
             I&apos;m a 15 year old passionate Full Stack Web & App Developer who is proficient in building robust, fully functional software.     
             I enjoy working with both frontend and backend technologies. I&apos;m constantly learning and evolving with new technologies.
+	    Other than this I like to play a bit of chess sometimes
           </div>
         </div>
         <div className='w-full md:w-auto'> 
