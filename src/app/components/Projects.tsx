@@ -10,7 +10,7 @@ const Projects: React.FC = ({}) => {
             url:""
         },
         {
-            name:"Routine follower",
+            name:"Daily.Routine",
             details:"It is an app that lets you add your daily routine, keep track of your progress, and get reminders. It has features like streak tracking and statistics. It is aimed to help build habits and to stick to a routine. (in development)",
             techStacks:"React Native, Expo, Firebase Firestore, Firebase Auth",
             url:""
