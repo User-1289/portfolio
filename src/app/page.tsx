@@ -16,7 +16,7 @@ export default function Home() {
             Hey, I&apos;m<br/> Armaan Zeyad
           </div>
           <div className='text-gray-300 leading-relaxed'>
-            I&apos;m passionate Full Stack Web & App Developer who is proficient in building robust, fully functional software.     
+            I&apos;m a passionate Full Stack Web & App Developer who is proficient in building robust, fully functional software.     
             I enjoy working with both frontend and backend technologies. I&apos;m constantly learning and evolving with new technologies.
 	    Other than this I like to play a bit of chess sometimes
           </div>
