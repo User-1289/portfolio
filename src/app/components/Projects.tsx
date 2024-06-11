@@ -57,7 +57,7 @@ const Projects: React.FC = ({}) => {
         <div id='Projects' className='mt-5'>
             <h1 className='text-center text-3xl'>Projects</h1>
             <h2 className='text-xl text-center mt-5 text-gray-400'>Projects that i have done</h2>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-5 items-center  justify-around '>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-5 items-center justify-around '>
                 {projectsInfo.map((prj,i)=>(
                     <div key={i} className=' bg-gray-800 col-auto flex flex-col justify-between p-5 min-h-80 rounded-xl'>
                         <div>

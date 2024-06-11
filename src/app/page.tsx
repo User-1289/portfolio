@@ -5,7 +5,7 @@ import TechStack from './components/TechStack';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import { useState, useRef, useEffect } from 'react';
-
+import coderImg2 from './assets/improved-img-2.jpg'
 export default function Home() {
   return (
     <div id='Home' className='bg-black text-white'>
@@ -24,7 +24,7 @@ export default function Home() {
         <div className='w-full md:w-auto'> 
           <Image
             className='w-full h-auto md:max-w-md' 
-            src={coderImg}
+            src={coderImg2}
             alt='A programmer coding'
           />
         </div>
