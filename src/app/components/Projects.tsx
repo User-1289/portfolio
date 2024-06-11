@@ -43,13 +43,13 @@ const Projects: React.FC = ({}) => {
             name:"Online Quiz Website",
             details:"This website is an online quiz platform. Users could create, attend or test their knowledge with a random quiz about different topics",
             techStacks:"HTML, CSS, JS, Firebase",
-            url:"https://todo.deverse.space"
+            url:"https://quiz-hub-fun.netlify.app/"
         },
         {
             name:"Todo Website with sync",
             details:"It's a To-do website in which you could sign up with your google account and schedule your day with To-dos. It also has auto async",
             techStacks:"React, Firebase",
-            url:"https://todo.deverse.space"
+            url:"https://todowebappcom.netlify.app"
         },
     ]
 
