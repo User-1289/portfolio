@@ -1,13 +1,13 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React from 'react'
 
 const Projects: React.FC = ({}) => {
 
     let projectsInfo = [
         {
-            name:"Daily.Routine",
-            details:"It is an app that lets you add your daily routine, keep track of your progress, and get reminders. It has features like streak tracking and statistics. It is aimed to help build habits and to stick to a routine. (in development)",
-            techStacks:"React Native, Expo, Firebase Firestore, Firebase Auth",
-            url:""
+            name: "Buildt.dev",
+            details: "It's a platform to create websites from prompts. Create, modify, and deploy websites in just a second, with full access to code. (In Development)",
+            techStacks: "Next.js, React, TypeScript, NodeJs, Python...",
+            url: "https://buildt.dev"
         },
         {
             name:"PDF data extractor",
@@ -53,7 +53,17 @@ const Projects: React.FC = ({}) => {
         },
     ]
 
-    return(
+    let experienceInfo = [
+        {
+            name: "AI Chatbot Platform",
+            role: "Freelance Developer",
+            details: "Developing a platform that allows businesses to create custom chatbots for their websites. The platform enables easy integration and management of AI-powered chatbots to enhance customer interactions.",
+            techStacks: "React, Node.js, OpenAI API, MongoDB",
+            duration: "2024 August - Present"
+        }
+    ]
+
+    return (
         <div id='Projects' className='mt-5'>
             <h1 className='text-center text-3xl'>Projects</h1>
             <h2 className='text-xl text-center mt-5 text-gray-400'>Projects that i have done</h2>
@@ -71,6 +81,22 @@ const Projects: React.FC = ({}) => {
                          <div className='self-start mt-5 flex items-center'>
                             <svg  fill='white' xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"/></svg>
                             <a className='ml-2 underline underline-offset-1' target='_blank' href={prj.url}>{prj.name}</a>
+                        </div>
+                    </div>
+                ))}
+            </div>
+
+            <h1 className='text-center text-3xl mt-16'>Experience</h1>
+            <div className='mt-10'>
+                {experienceInfo.map((exp, i) => (
+                    <div key={i} className='bg-gray-800 p-6 rounded-xl mb-8'>
+                        <h2 className='text-2xl font-bold'>{exp.name}</h2>
+                        <h3 className='text-xl text-gray-300 mt-2'>{exp.role}</h3>
+                        <p className='text-gray-400 mt-4'>{exp.details}</p>
+
+                        <div className='mt-2'>
+                            <span className='font-semibold'>Duration: </span>
+                            <span className='text-gray-300'>{exp.duration}</span>
                         </div>
                     </div>
                 ))}
