@@ -13,7 +13,7 @@ const Projects: React.FC = ({}) => {
             name:"PDF data extractor",
             details:"It is a tool to extract various insights from PDF such as extracting questions or conceps from textbooks. It is mainly aimed for educating instructors and students. (In development)",
             techStacks:"Django, Python, NextJS, NextAuth, Firebase, Firebase storage",
-            url:""
+            url:"https://pdf-extracting-tutor.vercel.app/"
         },
         {
             name:"Vehicle Fee Manager",
