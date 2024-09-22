@@ -45,7 +45,7 @@ export default function Component() {
             <p className="text-gray-600 dark:text-gray-400 mb-4">By Armaan Zeyad, a 15 year old developer</p>
             
             <div className="prose dark:prose-invert max-w-none">
-              <p className="mb-4">Our current education system, despite its many strengths, often falls into the trap of standardization—putting all students in the same metaphorical box. While this approach aims for equality, it may inadvertently stifle individual potential and creativity.</p>
+            <p className="mb-4">Our current education system, despite its many strengths, often falls into the trap of standardization—putting all students in the same metaphorical box. While this approach aims for equality, it may inadvertently stifle individual potential and creativity.</p>
               
               <h3 className="text-xl font-semibold mt-6 mb-3">The Problem with One-Size-Fits-All</h3>
               <p className="mb-4">Traditional education systems tend to:</p>
@@ -57,7 +57,7 @@ export default function Component() {
               </ul>
               
               <h3 className="text-xl font-semibold mt-6 mb-3">The Role of Teachers</h3>
-              <p className="mb-4">Many teachers, constrained by rigid curricula and performance metrics, find themselves reinforcing this 'box.' However, it's crucial to note that most educators are passionate about helping students succeed and are often aware of these limitations.</p>
+              <p className="mb-4">Many teachers, constrained by rigid curricula and performance metrics, find themselves reinforcing this &apos;box.&apos; However, it&apos;s crucial to note that most educators are passionate about helping students succeed and are often aware of these limitations.</p>
               
               <h3 className="text-xl font-semibold mt-6 mb-3">Breaking Free: A New Approach</h3>
               <p className="mb-4">To truly serve our students, we need an education system that:</p>
@@ -69,8 +69,7 @@ export default function Component() {
               </ul>
               
               <h3 className="text-xl font-semibold mt-6 mb-3">Conclusion</h3>
-              <p className="mb-4">By acknowledging the limitations of our current system, we can work towards an educational approach that truly empowers every student to reach their full potential. This isn't about blaming teachers or schools, but about reimagining education for the 21st century and beyond.</p>
-            </div>
+              <p className="mb-4">By acknowledging the limitations of our current system, we can work towards an educational approach that truly empowers every student to reach their full potential. This isn&apos;t about blaming teachers or schools, but about reimagining education for the 21st century and beyond.</p></div>
           </div>
         </article>
         
