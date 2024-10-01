@@ -55,11 +55,11 @@ const Projects: React.FC = ({}) => {
 
     let experienceInfo = [
         {
-            name: "AI Chatbot Platform",
-            role: "Freelance Developer",
-            details: "Developing a platform that allows businesses to create custom chatbots for their websites. The platform enables easy integration and management of AI-powered chatbots to enhance customer interactions.",
-            techStacks: "React, Node.js, OpenAI API, MongoDB",
-            duration: "2024 August - Present"
+            name: "Full Stack Web Developer",
+            role: "Developed full stack apps in NextJS, Vue",
+            details: "Collaborated effectively as a full stack developer on multiple projects, working seamlessly with the team to deliver results efficiently and on time.",
+            techStacks: "React, Node.js, NextJS, MongoDB, Vue",
+            duration: "2024 July - 2024 September"
         }
     ]
 
