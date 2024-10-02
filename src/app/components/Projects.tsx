@@ -55,7 +55,7 @@ const Projects: React.FC = ({}) => {
 
     let experienceInfo = [
         {
-            name: "Full Stack Web Developer",
+            name: "Freelance Web Developer",
             role: "Developed full stack apps in NextJS, Vue",
             details: "Collaborated effectively as a full stack developer on multiple projects, working seamlessly with the team to deliver results efficiently and on time.",
             techStacks: "React, Node.js, NextJS, MongoDB, Vue",
