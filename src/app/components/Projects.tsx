@@ -96,7 +96,7 @@ const Projects: React.FC = ({}) => {
             <h1 className='text-center text-3xl mt-16'>Experience</h1>
             <div className='mt-10 space-y-8'>
                 {experienceInfo.map((experience, i) => (
-    <div className="bg-gray-800 p-6 rounded-xl">
+    <div className="bg-gray-800 p-6 rounded-xl" key={i}>
     <h2 className="text-2xl font-bold text-white">{experience.name}</h2>
     <h3 className="text-xl text-gray-300 mt-2">{experience.role}</h3>
     <p className="text-gray-400 mt-4">{experience.details}</p>
