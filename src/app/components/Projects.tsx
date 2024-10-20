@@ -97,9 +97,6 @@ const Projects: React.FC = ({}) => {
     <p className="text-gray-400 mt-4">{experience.details}</p>
     <div className="mt-4">
       <div className="mt-2">
-        <span className="font-semibold text-white">Tech Stacks: </span>
-      </div>
-      <div className="mt-2">
         <span className="font-semibold text-white">Duration: </span>
         <span className="text-gray-300">{experience.duration}</span>
       </div>
