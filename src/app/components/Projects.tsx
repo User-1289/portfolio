@@ -55,17 +55,13 @@ const Projects: React.FC = ({}) => {
 
     let experienceInfo = [
         {
-            name: "Measure Clinic Chat",
-            role: "Freelance Developer",
-            details: "Led the development of a chatbot platform where clinics could create AI-powered bots and embed them in websites with one line of code. Managed full-stack development, UI/UX design, deployment, and DevOps tasks independently. Integrated advanced authentication and backend services. (Paused due to client budget constraints)",
-            techStacks: "Next.js, React, MongoDB, NextAuth, TailwindCSS, ShadCN, Vercel, FastAPI",
+            name: "Freelance Developer",
+            details: "Worked on building a web platform with chatbot functionality, handling full-stack development, design, and deployment. Managed integrations for backend services and authentication. (Project paused due to external factors)",
             duration: "2024 July - 2024 September"
         },
         {
-            name: "Willow Bookings",
-            role: "Freelance Developer",
-            details: "Redesigned the UI for a UK-based clinic booking tool, creating responsive layouts for both mobile and desktop views. Collaborated with the existing development team to integrate the updated designs into the live platform.",
-            techStacks: "Vue.js, Bootstrap",
+            name: "Freelance Developer",
+            details: "Involved in the redesign and development of a web application, focusing on improving the user interface and responsiveness for various device types. Collaborated with teams to integrate updates.",
             duration: "2024 August - 2024 September"
         }
     ]
@@ -98,12 +94,10 @@ const Projects: React.FC = ({}) => {
                 {experienceInfo.map((experience, i) => (
     <div className="bg-gray-800 p-6 rounded-xl" key={i}>
     <h2 className="text-2xl font-bold text-white">{experience.name}</h2>
-    <h3 className="text-xl text-gray-300 mt-2">{experience.role}</h3>
     <p className="text-gray-400 mt-4">{experience.details}</p>
     <div className="mt-4">
       <div className="mt-2">
         <span className="font-semibold text-white">Tech Stacks: </span>
-        <span className="text-gray-300">{experience.techStacks}</span>
       </div>
       <div className="mt-2">
         <span className="font-semibold text-white">Duration: </span>
