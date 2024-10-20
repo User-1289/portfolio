@@ -56,7 +56,7 @@ const Projects: React.FC = ({}) => {
     let experienceInfo = [
         {
             name: "Freelance Developer",
-            details: "Worked on building a web platform with chatbot functionality, handling full-stack development, design, and deployment. Managed integrations for backend services and authentication. (Project paused due to external factors)",
+            details: "Worked on building a web platform with chatbot functionality, handling full-stack development, design, and deployment. Managed integrations for backend services and authentication.",
             duration: "2024 July - 2024 September"
         },
         {
