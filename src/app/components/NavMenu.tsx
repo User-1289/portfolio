@@ -44,12 +44,7 @@ export default function Nav(props: any) {
             {({ open }) => (
                 <>
                     <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 dark:bg-slate-800">
-                        <div className="relative flex h-16 items-center justify-between">
-                            <div className="flex items-center">
-                                {<div className="flex-shrink-0">
-                                    <Image width={40} src={deverseLogo} alt="deverse.space" />
-                                </div>}
-                            </div>
+                    <div className="relative flex h-16 items-center justify-center">
                             <div className="flex items-center">
                                 <div className="flex-shrink-0 sm:hidden">
                                     <Disclosure.Button onClick={() => {setNavVis(!navVis)}} className="inline-flex items-center justify-center p-2 text-black hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
