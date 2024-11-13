@@ -11,45 +11,15 @@ const Projects: React.FC = ({}) => {
         },
         {
             name:"PDF data extractor",
-            details:"It is a tool to extract various insights from PDF such as extracting questions or concepts from textbooks. It is mainly aimed for educating instructors and students. (In development)",
+            details:"It is a tool to extract various insights from PDF such as extracting questions or concepts from textbooks. It is mainly aimed for educating instructors and students.",
             techStacks:"Django, Python, NextJS, NextAuth, Firebase, Firebase storage",
             url:"https://pdf-extracting-tutor.vercel.app/"
         },
         {
-            name:"Vehicle Fee Manager",
-            details:"Vehicle Fee Manager is an app that could be used to transform manual fee collection in schools. It acts as a system for the vehicle fee management in schools. It has a lot of features",
-            techStacks:"React Native, Typescript, Lambda functions, MongoDB, Firebase",
-            url:"https://play.google.com/store/apps/details?id=com.deverse.space.schoolbusfee"
-        },
-        {
-            name:"Memory Match Multiplayer",
+            name:"A Multiplayer Board Game",
             details:"Memory Match Multiplayer is a multiplayer game that lets you sharpen your memory. Friends could play it online by creating a room.",
             techStacks:"NextJS, React, Typescript, Express, Socket.io",
             url:"https://memory-match-multiplayer.vercel.app/"
-        },
-        {
-            name:"Puncture Fix App",
-            details:"This is an app that lets people search their nearest puncture shops. This is really useful especially if you have got a flat tire at an unknown place",
-            techStacks:"React Native, Leaflet, Lambda functions, MongoDB",
-            url:"https://play.google.com/store/apps/details?id=com.deverse.space.punctureapp"
-        },
-        {
-            name:"News Website & App",
-            details:"It's a service that provides latest news in various categories",
-            techStacks:"React, React Native, Lambda functions, MongoDB",
-            url:"https://play.google.com/store/apps/details?id=com.webdevintoapp.news"
-        },
-        {
-            name:"Online Quiz Website",
-            details:"This website is an online quiz platform. Users could create, attend or test their knowledge with a random quiz about different topics",
-            techStacks:"HTML, CSS, JS, Firebase",
-            url:"https://quiz-hub-fun.netlify.app/"
-        },
-        {
-            name:"Todo Website with sync",
-            details:"It's a To-do website in which you could sign up with your google account and schedule your day with To-dos. It also has auto async",
-            techStacks:"React, Firebase",
-            url:"https://todowebappcom.netlify.app"
         },
     ]
 
