@@ -5,7 +5,7 @@ const Projects: React.FC = ({}) => {
     let projectsInfo = [
         {
             name: "Buildt.dev",
-            details: "It's a platform to create websites from prompts. Create, modify, and deploy websites in just a second, with full access to code. (In Development)",
+            details: "It's a platform to create websites from prompts. Create, modify, and deploy websites in just a second, with full access to code. (Scrapped). Learnt a lot, llm code generation and parsing, ast traversing, automating package downloads, integration of ui libriaries totally automated...",
             techStacks: "Next.js, React, TypeScript, NodeJs, Python...",
             url: "https://buildt.dev"
         },
