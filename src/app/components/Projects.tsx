@@ -4,6 +4,12 @@ const Projects: React.FC = ({}) => {
 
     let projectsInfo = [
         {
+            name:"Incoming Project",
+            details:"Interact with websites with just natural language, a cdn script with a backend any website can put and then users will be able to interact with the website with just natural language.",
+            techStacks:"Typescript, NodeJs, Express",
+            url:"#"
+        },
+        {
             name: "Frankleads.io",
             details: "AI-powered outreach to secure high-quality leads across freelance platforms.",
             techStacks: "Next.js, React, TypeScript, NodeJs, Python..., MongoDB, Firebase, Vercel",
@@ -31,15 +37,15 @@ const Projects: React.FC = ({}) => {
 
     let experienceInfo = [
         {
+            name:"Software Engineer Intern",
+            details:"Worked on building an internal tool for the company, handling full-stack development, design, and deployment. Worked on a react native library",
+            duration:"2024 November - 2025 May"
+        },
+        {
             name: "Freelance Developer",
             details: "Worked on building a web platform with chatbot functionality, handling full-stack development, design, and deployment. Managed integrations for backend services and authentication.",
             duration: "2024 July - 2024 September"
         },
-        {
-            name: "Freelance Developer",
-            details: "Involved in the redesign and development of a web application, focusing on improving the user interface and responsiveness for various device types. Collaborated with teams to integrate updates.",
-            duration: "2024 August - 2024 September"
-        }
     ]
 
     return (
