@@ -7,7 +7,7 @@ const Projects: React.FC = ({}) => {
             name:"Learnflow",
             details:"Transform your learning journey with AI-powered personalized courses. Get custom study plans, interactive lessons, and track your progress - all designed for students like you.",
             techStacks:"NextJS, OpenAI, Firebase, Paypal for payments (in dev)",
-            url:"https://learnflow-study"
+            url:"https://learnflow.study"
         },
         {
             name: "Frankleads.io",
