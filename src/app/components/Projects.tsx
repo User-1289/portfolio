@@ -6,7 +6,7 @@ const Projects: React.FC = ({}) => {
         {
             name:"NeoClip",
             details:"Video Generation AI. Transform your concepts into stunning, professional-quality videos effortlessly.",
-            techStacks:"NextJS",
+            techStacks:"NextJS, Stripe",
             url:"https://neoclip.studio"
         },
         {
