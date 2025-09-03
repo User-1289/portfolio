@@ -4,9 +4,15 @@ const Projects: React.FC = ({}) => {
 
     let projectsInfo = [
         {
+            name:"NeoClip",
+            details:"Video Generation AI",
+            techStacks:"NextJS",
+            url:"https://neoclip.studio"
+        },
+        {
             name:"Learnflow",
             details:"Transform your learning journey with AI-powered personalized courses. Get custom study plans, interactive lessons, and track your progress - all designed for students like you.",
-            techStacks:"NextJS, OpenAI, Firebase, Paypal for payments (in dev)",
+            techStacks:"NextJS, OpenAI, Firebase, Paypal",
             url:"https://learnflow.study"
         },
         {
