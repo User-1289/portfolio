@@ -6,13 +6,13 @@ import deverseLogo from '../assets/deverse-logo.png'
 import Image from "next/image";
 
 export default function Nav(props: any) {
-    const navigationVal = [
-        { name: 'Home', href: '#', current: true },
-        { name: 'Tech Stacks', href: '#', current: false },
-        { name: 'Projects', href: '#', current: false },
-        { name: 'Contact', href: '#', current: false },
-        {name 'Resume', href:'https://drive.google.com/file/d/1lL6lH004i0VyPBOEw0RPwGM2Fxzn2v2l/view?usp=sharing', current:false}
-    ];
+const navigationVal = [
+    { name: 'Home', href: '#', current: true },
+    { name: 'Tech Stacks', href: '#', current: false },
+    { name: 'Projects', href: '#', current: false },
+    { name: 'Contact', href: '#', current: false },
+    { name: 'Resume', href: 'https://drive.google.com/file/d/1lL6lH004i0VyPBOEw0RPwGM2Fxzn2v2l/view?usp=sharing', current: false }
+];
 
     const [navigation, updateNav] = useState(navigationVal);
     const [navVis, setNavVis] = useState(false)
@@ -59,12 +59,24 @@ export default function Nav(props: any) {
                                 </div>
                                 <div className="hidden sm:ml-6 sm:block">
                                     <div className="flex space-x-4">
-                                        {navigation.map((item) => (
+                                    {navigation.map((item) => (
+                                        item.name === "Resume" ? (
                                             <a
                                                 key={item.name}
-                                                //id={item.name}
-                                               // href={item.href}
-                                                onClick={() => {focusOnClicked(item.name); getClPos(item.name)}}
+                                                href={item.href}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className={classNames(
+                                                    'text-white hover:bg-gray-700 hover:text-white',
+                                                    'px-3 py-2 text-sm font-medium rounded-md cursor-pointer'
+                                                )}
+                                            >
+                                                {item.name}
+                                            </a>
+                                        ) : (
+                                            <a
+                                                key={item.name}
+                                                onClick={() => { focusOnClicked(item.name); getClPos(item.name) }}
                                                 className={classNames(
                                                     item.current ? 'bg-gray-900 text-white' : 'text-white hover:bg-gray-700 hover:text-white',
                                                     'px-3 py-2 text-sm font-medium rounded-md cursor-pointer'
@@ -73,7 +85,8 @@ export default function Nav(props: any) {
                                             >
                                                 {item.name}
                                             </a>
-                                        ))}
+                                        )
+                                    ))}
                                     </div>
                                 </div>
                             </div>
