@@ -11,6 +11,7 @@ export default function Nav(props: any) {
         { name: 'Tech Stacks', href: '#', current: false },
         { name: 'Projects', href: '#', current: false },
         { name: 'Contact', href: '#', current: false },
+        {name 'Resume', href:'https://drive.google.com/file/d/1lL6lH004i0VyPBOEw0RPwGM2Fxzn2v2l/view?usp=sharing', current:false}
     ];
 
     const [navigation, updateNav] = useState(navigationVal);
