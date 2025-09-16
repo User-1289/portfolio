@@ -46,16 +46,21 @@ const navigationVal = [
                 <>
                     <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 dark:bg-slate-800">
                     <div className="relative flex h-16 items-center justify-center">
-                            <div className="flex items-start md:items-center justify-between w-full">
+                            <div className="flex items-start ">
                                 <div className="flex-shrink-0 sm:hidden">
-                                    <Disclosure.Button onClick={() => {setNavVis(!navVis)}} className="inline-flex items-center justify-center p-2 text-black hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-                                        <span className="sr-only">Open main menu</span>
-                                        {navVis ? (
-                                            <XMarkIcon className="block h-7 w-7" aria-hidden="true" />
-                                        ) : (
-                                            <Bars3Icon className="block h-8 w-8" aria-hidden="true" />
-                                        )}
-                                    </Disclosure.Button>
+                    <div className="absolute left-0 flex items-center sm:hidden top-2">
+                    <Disclosure.Button
+                    onClick={() => { setNavVis(!navVis) }}
+                    className="inline-flex items-center justify-center p-2 text-black hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                    >
+                    <span className="sr-only">Open main menu</span>
+                    {navVis ? (
+                        <XMarkIcon className="block h-7 w-7" aria-hidden="true" />
+                    ) : (
+                        <Bars3Icon className="block h-8 w-8" aria-hidden="true" />
+                    )}
+                    </Disclosure.Button>
+                </div>
                                 </div>
                                 <div className="hidden sm:ml-6 sm:block">
                                     <div className="flex space-x-4">
