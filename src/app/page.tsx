@@ -16,9 +16,8 @@ export default function Home() {
             Hey, I&apos;m<br/> Armaan Zeyad
           </div>
           <div className='text-gray-300 leading-relaxed'>
-            I&apos;m a 16 year old passionate Full Stack Web & App Developer who is proficient in building robust, fully functional software.     
-            I enjoy working with both frontend and backend technologies. I&apos;m constantly learning and evolving with new technologies.
-	    Other than this I like to play a bit of chess sometimes
+            I&apos;m a 16 year old passionate Full Stack Engineer. I like to design, architect, build, deploy, and scale full stack systems. 
+            Currently building some stuff and looking to work on early stage startups.
           </div>
         </div>
         <div className='w-full md:w-auto'> 
