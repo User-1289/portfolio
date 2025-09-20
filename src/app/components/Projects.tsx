@@ -4,6 +4,12 @@ const Projects: React.FC = ({}) => {
 
     let projectsInfo = [
         {
+            name: "Photolabs",
+            details:"A suite of video gen apis to build on ",
+            techStacks: "Python, NextJS",
+            url:"https://photolabs.dev"
+        }
+        {
             name:"NeoClip",
             details:"Video Generation AI. Transform your concepts into stunning, professional-quality videos effortlessly.",
             techStacks:"NextJS, Stripe",
