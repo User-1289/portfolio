@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Projects: React.FC = ({}) => {
-
     let projectsInfo = [
         {
             name: "Photolabs",
