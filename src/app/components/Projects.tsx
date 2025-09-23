@@ -10,6 +10,12 @@ const Projects: React.FC = ({}) => {
             url:"https://photolabs.dev"
         },
         {
+            name:"MCP Server for Stock data",
+            details: "Different tools for an mcp server that can be plugged into llm for stock prices and stock histories using data from yahoo finance",
+            techStacks:"Python",
+            url:"https://github.com/User-1289/stock-mcp-server"
+        },
+        {
             name:"NeoClip",
             details:"Video Generation AI. Transform your concepts into stunning, professional-quality videos effortlessly.",
             techStacks:"NextJS, Stripe",
