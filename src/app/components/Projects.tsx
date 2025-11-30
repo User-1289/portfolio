@@ -5,71 +5,71 @@ const Projects: React.FC = ({}) => {
     let projectsInfo = [
         {
             name: "Photolabs",
-            details:"A suite of video gen apis to build on ",
-            techStacks: "Python, NextJS",
+            details:"A suite of high-performance video generation APIs for AI developers. Focused on clean API design + scalable compute.",
+            techStacks: "Python, Next.js",
             url:"https://photolabs.dev"
         },
         {
-            name:"MCP Server for Stock data",
-            details: "Different tools for an mcp server that can be plugged into llm for stock prices and stock histories using data from yahoo finance",
-            techStacks:"Python",
-            url:"https://github.com/User-1289/stock-mcp-server"
-        },
-        {
             name:"NeoClip",
-            details:"Video Generation AI. Transform your concepts into stunning, professional-quality videos effortlessly.",
-            techStacks:"NextJS, Stripe",
+            details:"Generate polished marketing videos using AI characters + user-uploaded products. Ownership: architecture, pipelines, UI, and deployment.",
+            techStacks:"Next.js, Stripe",
             url:"https://neoclip.studio"
         },
         {
             name:"Learnflow",
-            details:"Transform your learning journey with AI-powered personalized courses. Get custom study plans, interactive lessons, and track your progress - all designed for students like you.",
-            techStacks:"NextJS, OpenAI, Firebase, Paypal",
+            details:"AI-powered learning platform that creates custom study plans, interactive lessons, and progress tracking.",
+            techStacks:"Next.js, OpenAI, Firebase, PayPal",
             url:"https://learnflow.study"
         },
         {
-            name: "Frankleads.io",
-            details: "AI-powered outreach to secure high-quality leads across freelance platforms.",
-            techStacks: "Next.js, React, TypeScript, NodeJs, Python..., MongoDB, Firebase, Vercel",
+            name: "FrankLeads.io",
+            details: "Searches Reddit, X, LinkedIn and finds high-intent prospects using embeddings + ranking.",
+            techStacks: "Next.js, Node.js, Python, MongoDB, Firebase, Vercel",
             url: "https://frankleads.io"
         },
         {
+            name: "LinkReach",
+            details: "Building a B2B SaaS that identifies prospects and sends personalized outreach safely at scale. (In Development)",
+            techStacks: "Node.js, Next.js, OpenAI, Redis, Puppeteer, MongoDB",
+            url: "#"
+        },
+        {
             name: "Buildt.dev",
-            details: "It's a platform to create websites from prompts. Create, modify, and deploy websites in just a second, with full access to code. (Scrapped). Learnt a lot, llm code generation and parsing, ast traversing, automating package downloads, integration of ui libriaries totally automated...",
-            techStacks: "Next.js, React, TypeScript, NodeJs, Python...",
+            details: "Platform that generated, modified, and deployed websites from prompts. Learned LLM codegen, AST parsing, auto component wiring, dependency resolution. (Scrapped, Learned Tons)",
+            techStacks: "Next.js, TypeScript, Node.js, Python",
             url: "https://buildt.dev"
         },
         {
-            name:"PDF data extractor",
-            details:"It is a tool to extract various insights from PDF such as extracting questions or concepts from textbooks. It is mainly aimed for educating instructors and students.",
-            techStacks:"Django, Python, NextJS, NextAuth, Firebase, Firebase storage",
+            name:"PDF Insight Extractor",
+            details:"Extracts concepts, questions, and summaries from large textbooks for students + instructors.",
+            techStacks:"Django, Python, Next.js, Firebase",
             url:"https://pdf-extracting-tutor.vercel.app/"
         },
         {
-            name:"A Multiplayer Board Game",
-            details:"Memory Match Multiplayer is a multiplayer game that lets you sharpen your memory. Friends could play it online by creating a room.",
-            techStacks:"NextJS, React, Typescript, Express, Socket.io",
+            name:"Memory Match",
+            details:"Real-time multiplayer with Socket.io and custom lobby system.",
+            techStacks:"Next.js, Typescript, Express, Socket.io",
             url:"https://memory-match-multiplayer.vercel.app/"
         },
     ]
 
     let experienceInfo = [
         {
-            name:"Software Engineer Intern - Vispero",
-            details:"Worked on building an internal tool for the company, handling full-stack development, design, and deployment. Worked on a react native library where I created a react native wrapper library with android kotlin bridging",
-            duration:"2024 November - 2025 June"
+            name:"Software Engineer Intern — Vispero",
+            details:"Built internal full-stack tools end-to-end: UI → backend → infra. Created a React Native wrapper for JAWS Kiosk APIs (Android Kotlin bridging). Designed system architectures for internal products. Shipped apps on AWS ECS with Docker, S3, ECR, EFS, and CI/CD.",
+            duration:"Nov 2024 → Jun 2025"
         },
         {
             name: "Freelance Developer",
-            details: "Worked on building a web platform with chatbot functionality, handling full-stack development, design, and deployment. Managed integrations for backend services and authentication.",
-            duration: "2024 July - 2024 September"
+            details: "Built a custom AI chatbot SaaS for businesses. Designed system architecture, UI, and full-stack implementation. Improved an existing website's UI/UX + mobile responsiveness.",
+            duration: "Jul 2024 → Sep 2024"
         },
     ]
 
     return (
         <div id='Projects' className='mt-5'>
-            <h1 className='text-center text-3xl'>Projects</h1>
-            <h2 className='text-xl text-center mt-5 text-gray-400'>Projects that I have done</h2>
+            <h1 className='text-center text-3xl'>My Projects</h1>
+            <h2 className='text-xl text-center mt-5 text-gray-400'>Projects I&apos;ve Built (and shipped)</h2>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-5 items-center justify-around '>
                 {projectsInfo.map((prj,i)=>( 
                     <div key={i} className=' bg-gray-800 col-auto flex flex-col justify-between p-5 min-h-80 rounded-xl'>
@@ -82,19 +82,24 @@ const Projects: React.FC = ({}) => {
                             </div>
                         </div>
                         <div className='self-start mt-5 flex items-center'>
-                            <svg  fill='white' xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"/></svg>
-                            <a className='ml-2 underline underline-offset-1' target='_blank' href={prj.url}>{prj.name}</a>
+                            {prj.url !== '#' && (
+                                <>
+                                    <svg  fill='white' xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"/></svg>
+                                    <a className='ml-2 underline underline-offset-1' target='_blank' href={prj.url}>{prj.name}</a>
+                                </>
+                            )}
                         </div>
                     </div>
                 ))}
             </div>
 
-            <h1 className='text-center text-3xl mt-16'>Experience</h1>
+            <div className='text-center my-12 text-gray-600 text-2xl'>⸻</div>
+            <h1 className='text-center text-3xl mt-10'>My Experience</h1>
             <div className='mt-10 space-y-8'>
                 {experienceInfo.map((experience, i) => (
-    <div className="bg-gray-800 p-6 rounded-xl" key={i}>
+    <div className="bg-gray-800 p-6 rounded-xl max-w-4xl mx-auto" key={i}>
     <h2 className="text-2xl font-bold text-white">{experience.name}</h2>
-    <p className="text-gray-400 mt-4">{experience.details}</p>
+    <p className="text-gray-400 mt-4 leading-relaxed">{experience.details}</p>
     <div className="mt-4">
       <div className="mt-2">
         <span className="font-semibold text-white">Duration: </span>
