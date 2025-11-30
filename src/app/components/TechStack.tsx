@@ -7,8 +7,8 @@ import Image from 'next/image';
 export default function TechStack() {
   return (
     <div id='Tech Stacks' className='mt-5'>
-      <h1 className='text-3xl text-center text-white'>My Tech Stacks</h1>
-      <h2 className='text-2xl text-center mt-5 text-gray-400'>Technologies that I Have Worked With</h2>
+      <h1 className='text-3xl text-center text-white'> SKILLS</h1>
+      <h2 className='text-2xl text-center mt-5 text-gray-400'>Tech I Work With (and actually ship with)</h2>
       <div className='flex flex-wrap justify-center p-5 sm:p-20 gap-10'  >
         <div className='flex items-center flex-col gap-3'>
           <svg className='h-[3rem] lg:h-[6rem]' viewBox="0 0 128 128" >
@@ -123,6 +123,7 @@ export default function TechStack() {
                 <span>Redis</span>
               </div>
       </div>
+      <div className='text-center my-12 text-gray-600 text-2xl'>⸻</div>
     </div>
   );
 }
