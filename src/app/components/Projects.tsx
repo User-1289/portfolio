@@ -60,10 +60,15 @@ const Projects: React.FC = ({}) => {
             duration:"Nov 2024 → Jun 2025"
         },
         {
-            name: "Freelance Developer",
+            name: "Software Engineer - Freelance Contractor",
             details: "Built a custom AI chatbot SaaS for businesses. Designed system architecture, UI, and full-stack implementation. Improved an existing website's UI/UX + mobile responsiveness.",
             duration: "Jul 2024 → Sep 2024"
         },
+        {
+            duration:"Oct 2025 - Dec 2025",
+            name: "Mobile App Developer  - Freelance Contractor",
+            details: "Providing support and ongoing development for an app in prod used by 50k users. Increased react native app loading time from 3s to 200ms making use of parallel processing of tasks. Revamped the whole UI according to client’s requirements. mplemented best practices of react native in an existing codebase containing tech debt"
+        }
     ]
 
     return (
