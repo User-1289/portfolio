@@ -53,21 +53,50 @@ const Projects: React.FC = ({}) => {
         },
     ]
 
-    let experienceInfo = [
-                {
-            duration:"Oct 2025 - Dec 2025",
-            name: "Mobile App Developer  - Freelance Contractor",
-            details: "Providing support and ongoing development for an app in prod used by 50k users. Increased react native app loading time from 3s to 200ms making use of parallel processing of tasks. Revamped the whole UI according to client’s requirements. mplemented best practices of react native in an existing codebase containing tech debt"
+    const experienceInfo = [
+        {
+            name: "Product Lead — Flamingo Cards",
+            duration: "Mar 2026 – Oct 2026",
+            highlights: [
+                "Moved from engineering into leading product, coordinating a lean team across engineering, design, and testing.",
+                "Helped increase MRR by 100% through paywall testing, product testing, funnel improvements, and pricing optimization.",
+                "Owned experiments end to end: coming up with ideas, building experiments, shipping changes, working with analytics, and reporting the results."
+            ]
         },
         {
-            name:"Software Engineer Intern — Vispero",
-            details:"Built internal full-stack tools end-to-end: UI → backend → infra. Created a React Native wrapper for JAWS Kiosk APIs (Android Kotlin bridging). Designed system architectures for internal products. Shipped apps on AWS ECS with Docker, S3, ECR, EFS, and CI/CD.",
-            duration:"Nov 2024 → Jun 2025"
+            name: "Software Engineer — Flamingo Cards",
+            duration: "Jan 2026 – Mar 2026",
+            highlights: [
+                "Built and shipped features for a consumer app used by 100k+ users, owning work from development through deployment.",
+                "Developed internal web apps and analytics tools, and implemented A/B tests to support product and revenue growth.",
+                "Worked across React Native, React, Node.js, Firebase, Google Cloud, and BigQuery."
+            ]
         },
         {
-            name: "Software Engineer - Freelance Contractor",
-            details: "Built a custom AI chatbot SaaS for businesses. Designed system architecture, UI, and full-stack implementation. Improved an existing website's UI/UX + mobile responsiveness.",
-            duration: "Jul 2024 → Sep 2024"
+            name: "Mobile App Developer — Freelance Contractor",
+            duration: "Oct 2025 – Dec 2025",
+            highlights: [
+                "Provided ongoing development for a production mobile app used by 50k users.",
+                "Reduced React Native app loading time from 3 seconds to 200 milliseconds by running tasks in parallel.",
+                "Revamped the UI to meet client requirements and improved an existing React Native codebase with significant technical debt."
+            ]
+        },
+        {
+            name: "Software Engineering Intern — Vispero",
+            duration: "Nov 2024 – Jun 2025",
+            highlights: [
+                "Developed a React Native library for JAWS Kiosk Android APIs, enabling accessibility features for enterprise kiosks.",
+                "Designed system architectures for internal products and shipped two full-stack apps end to end, from UI/UX and React front ends to Node.js back ends.",
+                "Owned Dockerization, CI/CD, and deployment on AWS ECS, working with S3, ECR, EFS, IAM, and CloudWatch."
+            ]
+        },
+        {
+            name: "Software Engineer — Freelance Contractor",
+            duration: "Jul 2024 – Aug 2024",
+            highlights: [
+                "Built an AI chatbot SaaS for businesses using OpenAI and custom context ingestion, owning system architecture, API design, UI, and full-stack development.",
+                "Redesigned a client website to improve responsiveness, UI/UX, and performance."
+            ]
         }
     ]
 
@@ -104,7 +133,11 @@ const Projects: React.FC = ({}) => {
                 {experienceInfo.map((experience, i) => (
     <div className="bg-gray-800 p-6 rounded-xl max-w-4xl mx-auto" key={i}>
     <h2 className="text-2xl font-bold text-white">{experience.name}</h2>
-    <p className="text-gray-400 mt-4 leading-relaxed">{experience.details}</p>
+    <ul className="text-gray-400 mt-4 leading-relaxed list-disc pl-5 space-y-2">
+      {experience.highlights.map((highlight) => (
+        <li key={highlight}>{highlight}</li>
+      ))}
+    </ul>
     <div className="mt-4">
       <div className="mt-2">
         <span className="font-semibold text-white">Duration: </span>

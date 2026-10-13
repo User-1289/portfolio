@@ -42,7 +42,7 @@ export default function Component() {
         <article className="mb-8 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
           <div className="p-6">
             <h2 className="text-3xl font-bold mb-4">Rethinking Education: Breaking Free from the Box</h2>
-            <p className="text-gray-600 dark:text-gray-400 mb-4">By Armaan Zeyad, a 15 year old developer</p>
+            <p className="text-gray-600 dark:text-gray-400 mb-4">By Armaan Zeyad</p>
             
             <div className="prose dark:prose-invert max-w-none">
             <p className="mb-4">Our current education system, despite its many strengths, often falls into the trap of standardization—putting all students in the same metaphorical box. While this approach aims for equality, it may inadvertently stifle individual potential and creativity.</p>

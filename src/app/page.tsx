@@ -12,12 +12,12 @@ export default function Home() {
             Hey, I&apos;m<br/> Armaan Zeyad
           </div>
           <div className='text-xl md:text-2xl text-gray-400 mt-4 mb-6'>
-            Full Stack Engineer • Systems Architect • Early-Stage Builder
+            Product Engineer • Building Products • Driving Growth
           </div>
           <div className='text-gray-300 leading-relaxed text-lg max-w-3xl mx-auto'>
-            I&apos;m a 16-year-old engineer who loves taking ideas from zero to shipped. I design, architect, build, deploy, and scale full-stack systems — fast.
+            I&apos;m a product engineer. I love building things from scratch, owning them end to end, and helping them grow.
             <br/><br/>
-            Right now I&apos;m building a few products and looking to work with ambitious early-stage startups where engineers own the whole stack and ship real impact.
+            At Flamingo Cards, I started in engineering and moved into leading product. I helped increase MRR by 100% through hands-on product experiments, paywall testing, funnel improvements, and pricing optimization.
           </div>
         </div>
       </div>
