@@ -10,7 +10,7 @@ export default function Hero({ email, github }: { email: string; github: string 
       </div>
       <h1 id="hero-title">Armaan Zeyad</h1>
       <p className={styles.lead}>I build products and help them grow.</p>
-      <p className={styles.proof}>At Flamingo Cards, I helped double monthly recurring revenue in seven months.</p>
+      <p className={styles.proof}>At Flamingo Cards, I helped grow MRR by 100% in 7 months.</p>
       <div className={styles.bottomline}>
         <div className={styles.actions}>
           <a className="button primary" href="/resume"><FileText size={16} aria-hidden="true" /> Resume</a>
