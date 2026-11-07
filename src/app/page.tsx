@@ -37,33 +37,11 @@ export default function Home() {
       <a className="skip" href="#main">Skip to content</a>
       <header className="site-header wrap">
         <a className="brand" href="#top" aria-label="Armaan Zeyad, home"><Monogram /><span className="brand-title">Armaan Zeyad</span></a>
-        <nav aria-label="Main navigation"><a href="#work">Work</a><a href="#experience">Experience</a><a href="#contact">Contact <ArrowDown size={13} aria-hidden="true" /></a></nav>
+        <nav aria-label="Main navigation"><a href="#case-study">Case study</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#contact">Contact <ArrowDown size={13} aria-hidden="true" /></a></nav>
       </header>
       <main id="main" className="wrap">
         <Hero email={email} github={github} />
         <Impact />
-        <section id="work" className="section" aria-labelledby="work-title">
-          <div className="section-title"><h2 id="work-title">Selected work<span>.</span></h2></div>
-          <div className="work-list">
-            <article className="project">
-              <Phone product="flamingo" alt="The Flamingo Cards iPhone app" />
-              <div className="project-copy"><p className="eyebrow">Consumer subscriptions</p><h3>Flamingo Cards</h3>
-                <p>I moved from engineering into leading product, staying hands-on with a lean team. I took paywall, trial messaging, onboarding, and pricing experiments from hypothesis through implementation, deployment, and analysis.</p>
-                <p className="result">Helped increase MRR by 100% over seven months.</p>
-                <div className="project-actions"><a className="case-link" href="#case-study">Read case study <ArrowRight size={15} /></a><StoreLink href={flamingo} name="Flamingo Cards" /><ProductDemo name="Flamingo Cards" src="/work/flamingo.mp4" description="A walkthrough of the Flamingo Cards experience." /></div>
-              </div>
-            </article>
-            <article className="project">
-              <Phone product="honest" alt="The Honest iPhone app for couples" />
-              <div className="project-copy"><p className="eyebrow">Mobile product engineering</p><h3>Honest</h3>
-                <p>I rebuilt this couples app around things two people could do together. Partners could pair their phones, play games, and keep a shared prompt on their home screen with a widget.</p>
-                <p className="result">Shipped the new version in about a week.</p>
-                <div className="project-actions"><StoreLink href={honest} name="Honest" /><ProductDemo name="Honest" src="/work/honest.mp4" description="Setting up a couples widget on the iPhone home screen." /></div>
-              </div>
-            </article>
-            <AiWork />
-          </div>
-        </section>
         <article className="study section" id="case-study" aria-labelledby="study-title">
           <p className="eyebrow">Case study <span>/</span> Flamingo Cards</p>
           <h2 id="study-title">How I helped increase MRR by 100% at Flamingo Cards<span>.</span></h2>
@@ -86,6 +64,28 @@ export default function Home() {
             <a className="text-link study-source" href={flamingoCaseStudy}>Read the full case study on Notion <ArrowUpRight size={16} aria-hidden="true" /></a>
           </div>
         </article>
+        <section id="work" className="section" aria-labelledby="work-title">
+          <div className="section-title"><h2 id="work-title">Selected work<span>.</span></h2></div>
+          <div className="work-list">
+            <article className="project">
+              <Phone product="flamingo" alt="The Flamingo Cards iPhone app" />
+              <div className="project-copy"><p className="eyebrow">Consumer subscriptions</p><h3>Flamingo Cards</h3>
+                <p>I moved from engineering into leading product, staying hands-on with a lean team. I took paywall, trial messaging, onboarding, and pricing experiments from hypothesis through implementation, deployment, and analysis.</p>
+                <p className="result">Helped increase MRR by 100% over seven months.</p>
+                <div className="project-actions"><a className="case-link" href="#case-study">Read case study <ArrowRight size={15} /></a><StoreLink href={flamingo} name="Flamingo Cards" /><ProductDemo name="Flamingo Cards" src="/work/flamingo.mp4" description="A walkthrough of the Flamingo Cards experience." /></div>
+              </div>
+            </article>
+            <article className="project">
+              <Phone product="honest" alt="The Honest iPhone app for couples" />
+              <div className="project-copy"><p className="eyebrow">Mobile product engineering</p><h3>Honest</h3>
+                <p>I rebuilt this couples app around things two people could do together. Partners could pair their phones, play games, and keep a shared prompt on their home screen with a widget.</p>
+                <p className="result">Shipped the new version in about a week.</p>
+                <div className="project-actions"><StoreLink href={honest} name="Honest" /><ProductDemo name="Honest" src="/work/honest.mp4" description="Setting up a couples widget on the iPhone home screen." /></div>
+              </div>
+            </article>
+            <AiWork />
+          </div>
+        </section>
         <section id="experience" className="section" aria-labelledby="experience-title">
           <div className="section-title"><h2 id="experience-title">Experience<span>.</span></h2></div>
           <ol className="timeline">{jobs.map(([dates, role, company, summary]) => <li key={dates}><span className="dates">{dates}</span><div><h3>{role} <span>· {company}</span></h3><p>{summary}</p></div></li>)}</ol>
