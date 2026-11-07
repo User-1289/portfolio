@@ -1,0 +1,18 @@
+.page { padding-bottom: 45px; }
+.header { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 26px 0; border-bottom: 1px solid var(--line); font-size: 12px; }
+.header > span { color: var(--muted); }
+.intro { padding: 55px 0 20px; }
+.intro h1 { margin: 0; font-size: clamp(39px, 6vw, 64px); line-height: 1.05; letter-spacing: -.07em; font-weight: 600; }
+.intro h1 span { color: var(--accent); }
+.intro > p:not(:first-child) { max-width: 52ch; margin: 19px 0 0; color: var(--muted); font-size: 16px; }
+.intro nav { display: flex; gap: 9px; flex-wrap: wrap; margin-top: 26px; }
+.intro nav a { display: flex; gap: 18px; align-items: center; padding: 11px 14px; border: 1px solid var(--line); border-radius: 6px; font-size: 13px; }
+.intro nav a:hover { border-color: var(--accent); color: var(--accent); }
+.intro nav a span { color: var(--accent); }
+.option { margin-top: 52px; scroll-margin-top: 24px; }
+.caption { display: flex; gap: 14px; align-items: flex-start; margin-bottom: 23px; }
+.badge { display: grid; place-items: center; background: var(--ink); color: var(--paper); width: 33px; height: 33px; flex: none; border-radius: 6px; font-size: 13px; }
+.caption h2 { margin: 0 0 5px; font-size: 19px; font-weight: 600; letter-spacing: -.03em; }
+.caption p { margin: 0; font-size: 13px; color: var(--muted); max-width: 76ch; }
+.footer { margin-top: 45px; font-size: 14px; color: var(--accent); }
+@media (max-width: 610px) { .header > span { display: none; } .intro { padding-top: 36px; } .option { margin-top: 40px; } }
