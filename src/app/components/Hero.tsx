@@ -9,7 +9,7 @@ export default function Hero({ email, github }: { email: string; github: string 
         <p className={styles.availability}><span aria-hidden="true" />Based in India · Open to remote roles &amp; relocation</p>
       </div>
       <h1 id="hero-title">Armaan Zeyad</h1>
-      <p className={styles.lead}>I build and grow consumer apps.</p>
+      <p className={styles.lead}>I build products and help them grow.</p>
       <p className={styles.proof}>At Flamingo Cards, I helped double monthly recurring revenue in seven months.</p>
       <div className={styles.bottomline}>
         <div className={styles.actions}>

@@ -5,7 +5,7 @@ import "./globals.css";
 
 const inter = localFont({ src: "./fonts/inter-latin.woff2", display: "swap", weight: "100 900", variable: "--inter" });
 const title = "Armaan Zeyad — Product Engineer";
-const description = "I build and grow consumer apps. Selected work in mobile engineering, subscription experiments, and AI.";
+const description = "I build products and help them grow. Selected work in mobile engineering, subscription experiments, and AI.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : "https://armaan.codes"),
