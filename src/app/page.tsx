@@ -37,33 +37,11 @@ export default function Home() {
       <a className="skip" href="#main">Skip to content</a>
       <header className="site-header wrap">
         <a className="brand" href="#top" aria-label="Armaan Zeyad, home"><Monogram /><span className="brand-title">Armaan Zeyad</span></a>
-        <nav aria-label="Main navigation"><a href="#case-study">Case study</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#contact">Contact <ArrowDown size={13} aria-hidden="true" /></a></nav>
+        <nav aria-label="Main navigation"><a href="#work">Work</a><a href="#experience">Experience</a><a href="#case-study">Case study</a><a href="#contact">Contact <ArrowDown size={13} aria-hidden="true" /></a></nav>
       </header>
       <main id="main" className="wrap">
         <Hero email={email} github={github} />
         <Impact />
-        <article className="study section" id="case-study" aria-labelledby="study-title">
-          <p className="eyebrow">Case study <span>/</span> Flamingo Cards</p>
-          <h2 id="study-title">How I helped increase MRR by 100% at Flamingo Cards<span>.</span></h2>
-          <div className="study-content">
-            <p>I started in engineering and moved into leading product, staying hands-on with a lean team. Over seven months, I helped increase MRR by 100% through paywall testing, product testing, funnel improvements, and pricing optimization.</p>
-            <h3>What I owned</h3>
-            <p>I took experiments from hypothesis through implementation, deployment, analytics, and interpretation. I shipped changes using React Native, Node.js, and Firebase, and coordinated engineering, design, and testing.</p>
-            <h3>What we tested</h3>
-            <p>Flamingo often served an immediate occasion, like a date night. My interpretation was that users wanted to unlock the experience quickly. That shaped our tests of paywall formats, product demonstrations, trial messaging, and weekly pricing.</p>
-            <dl className="experiments">
-              <div><dt>Hard versus dismissible paywall</dt><dd>&gt;50% more trial starts</dd></div>
-              <div><dt>Product video on the paywall</dt><dd>&gt;25% higher conversion</dd></div>
-              <div><dt>Video → reassurance → three-day trial</dt><dd>~20% more trial starts</dd></div>
-              <div><dt>Weekly pricing experiments</dt><dd>&gt;25% higher lifetime value</dd></div>
-            </dl>
-            <p>These are separate experiment results. They do not add up to, or individually explain, the overall MRR increase.</p>
-            <h3>What the growth didn’t solve</h3>
-            <p>Reported day-30 product retention was below 1%. More trial starts did not, by themselves, establish better subscriber retention. A successful date-night session did not necessarily give people a reason to return.</p>
-            <p className="lesson">My takeaway: the first experience after the paywall needed to deliver on its promise quickly. That was a product lesson, not a separately measured retention improvement.</p>
-            <a className="text-link study-source" href={flamingoCaseStudy}>Read the full case study on Notion <ArrowUpRight size={16} aria-hidden="true" /></a>
-          </div>
-        </article>
         <section id="work" className="section" aria-labelledby="work-title">
           <div className="section-title"><h2 id="work-title">Selected work<span>.</span></h2></div>
           <div className="work-list">
@@ -91,6 +69,28 @@ export default function Home() {
           <ol className="timeline">{jobs.map(([dates, role, company, summary]) => <li key={dates}><span className="dates">{dates}</span><div><h3>{role} <span>· {company}</span></h3><p>{summary}</p></div></li>)}</ol>
           <div className="stack"><h3>Stack</h3><p>TypeScript · React Native · Next.js · Node.js · Firebase · BigQuery · AWS · Docker</p></div>
         </section>
+        <article className="study section" id="case-study" aria-labelledby="study-title">
+          <p className="eyebrow">Case study <span>/</span> Flamingo Cards</p>
+          <h2 id="study-title">How I helped increase MRR by 100% at Flamingo Cards<span>.</span></h2>
+          <div className="study-content">
+            <p>I started in engineering and moved into leading product, staying hands-on with a lean team. Over seven months, I helped increase MRR by 100% through paywall testing, product testing, funnel improvements, and pricing optimization.</p>
+            <h3>What I owned</h3>
+            <p>I took experiments from hypothesis through implementation, deployment, analytics, and interpretation. I shipped changes using React Native, Node.js, and Firebase, and coordinated engineering, design, and testing.</p>
+            <h3>What we tested</h3>
+            <p>Flamingo often served an immediate occasion, like a date night. My interpretation was that users wanted to unlock the experience quickly. That shaped our tests of paywall formats, product demonstrations, trial messaging, and weekly pricing.</p>
+            <dl className="experiments">
+              <div><dt>Hard versus dismissible paywall</dt><dd>&gt;50% more trial starts</dd></div>
+              <div><dt>Product video on the paywall</dt><dd>&gt;25% higher conversion</dd></div>
+              <div><dt>Video → reassurance → three-day trial</dt><dd>~20% more trial starts</dd></div>
+              <div><dt>Weekly pricing experiments</dt><dd>&gt;25% higher lifetime value</dd></div>
+            </dl>
+            <p>These are separate experiment results. They do not add up to, or individually explain, the overall MRR increase.</p>
+            <h3>What the growth didn’t solve</h3>
+            <p>Reported day-30 product retention was below 1%. More trial starts did not, by themselves, establish better subscriber retention. A successful date-night session did not necessarily give people a reason to return.</p>
+            <p className="lesson">My takeaway: the first experience after the paywall needed to deliver on its promise quickly. That was a product lesson, not a separately measured retention improvement.</p>
+            <a className="text-link study-source" href={flamingoCaseStudy}>Read the full case study on Notion <ArrowUpRight size={16} aria-hidden="true" /></a>
+          </div>
+        </article>
       </main>
       <footer id="contact" className="wrap"><div className="footer-main"><div><h2>Let’s talk<span>.</span></h2><a className="email-link" href={`mailto:${email}`}>{email} <ArrowUpRight size={20} /></a></div>
         <a className="back" href="#top">Back to top <ArrowUp size={15} /></a></div>
